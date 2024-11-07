@@ -11,8 +11,14 @@
     
     */
 
-  let sumArray = (arr: number[]) => {
-    return arr.reduce;
+  let sumArray = (arr: number[]): number => {
+    let sum = 0;
+
+    arr.forEach((i) => {
+      sum = sum + i;
+    });
+    // console.log("baire", sum);
+    return sum;
   };
 
   sumArray([1, 2, 3, 4, 5]);
