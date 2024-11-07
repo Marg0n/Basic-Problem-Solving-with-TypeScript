@@ -12,7 +12,7 @@
     */
 
   let sumArray = (arr: number[]): number => {
-    let sum = 0;
+    let sum : number = 0;
 
     arr.forEach((i) => {
       sum = sum + i;
