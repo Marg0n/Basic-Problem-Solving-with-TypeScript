@@ -41,8 +41,8 @@
     }
     // Type guard for circle
     else if (value["shape"] == "circle") {
-      result = Math.PI * value["radius"] * value["radius"];
-    //   result = Math.PI * value["radius"] * value["radius"].toFixed(2);
+      let r : string = (Math.PI * value["radius"] * value["radius"]).toFixed(2);
+      result = parseFloat(r);
     } else {
       console.log("only circle and rectangle is allowed!");
     }
