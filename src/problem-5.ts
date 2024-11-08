@@ -12,4 +12,15 @@
     Alice;
     
     */
+
+    // T = Object , K = Object keys of T
+    const getProperty = <T, K extends keyof T>(param : T, key : K) : T[K]=> { 
+
+        console.log(param[key]);
+
+        return param[key];
+    };
+
+    const person = { name: "Alice", age: 30, class: "person" };
+    console.log(getProperty(person, "class"));
 }
