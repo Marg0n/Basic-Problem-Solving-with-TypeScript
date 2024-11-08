@@ -11,12 +11,13 @@
 
     */
 
-  const removeDuplicates = (arr: number[]) => {
+  const removeDuplicates = (arr: number[]): number[] => {
     let array1: number[] = [];
 
     arr.forEach((value: number) => {
-      //   console.log("vitore", value);
       //   console.log(value,"=", array1.includes(value));
+
+      // check if array's value is inside the array or not
       if (!array1.includes(value)) {
         // console.log("ki pai?", value);
         array1.push(value);
